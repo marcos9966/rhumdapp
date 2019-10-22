@@ -4,7 +4,7 @@ package resmgr
 import (
 	"fmt"
 )
-
+//
 type Resource struct {
 	Root string
 }

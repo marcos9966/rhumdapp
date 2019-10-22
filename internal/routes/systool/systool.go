@@ -1,3 +1,4 @@
+//
 package systool
 import (
     "os/exec"
