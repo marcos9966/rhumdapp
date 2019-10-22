@@ -22,13 +22,13 @@ func urlOpen(c *gin.Context) {
             Url    	string `form:"url"`
         }{}
         c.Bind(&params)
-                
+
         cmd := exec.Command("xdg-open", params.Url)
         err := cmd.Start()
         if err!=nil {
             c.JSON(500, gin.H{"err":err})
-            return    
+            return
         }
-        c.JSON(200, gin.H{"cmd":"xdg-open","url":params.Url})        
+        c.JSON(200, gin.H{"cmd":"xdg-open","url":params.Url})
 }
 
