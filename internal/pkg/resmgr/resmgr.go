@@ -1,4 +1,4 @@
-// This package manage resource data 
+// This package manage resource data
 package resmgr
 
 import (
@@ -6,7 +6,7 @@ import (
 )
 
 type Resource struct {
-	Root string 
+	Root string
 }
 
 func (rs Resource) Get(url string) ([]byte, error) {
