@@ -16,7 +16,7 @@ vi .bashrc
 ```
 at the end of file add follow line
 ```
-PATH="$HOME/go/bin:$PATH"
+export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
 ```
 Save, quit terminal and reopen it
 
@@ -39,3 +39,7 @@ enable build shell to execute:
 chmod +x ./cmd/build.sh
 ```
 
+download dependecies
+```
+go get -u ...
+```
