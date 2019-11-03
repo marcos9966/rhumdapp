@@ -1,7 +1,7 @@
 package main
 
 import (
-	"./internal/pkg/resmgr"
+	"github.com/marcos9966/internal/pkg/resmgr"
     "strconv"
 
     "github.com/gin-gonic/gin"
