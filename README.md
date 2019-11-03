@@ -26,11 +26,10 @@ download go-bindata utility (used in this project)
 go get -u github.com/jteeuwen/go-bindata/...
 ```
 
-
-download zip, extract content and then with terminal go to rhumdapp-master folder.
-enable build shell to execute:
-
+download rhumdapp and enable build shell allowing execute permission:
 ```
+go get -u github.com/marcos9966/rhumdapp
+cd $GOPATH/src/github.com/marcos9966/rhumdapp
 chmod +x ./cmd/build.sh
 ```
 
