@@ -1,2 +1,2 @@
 go-bindata -prefix res -pkg resmgr -nocompress -o ./internal/pkg/resmgr/assets.go res/...
-go1.13.3 build -o cmd/rhumdapp
+go build -o cmd/rhumdapp

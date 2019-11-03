@@ -8,7 +8,7 @@ import (
     "path/filepath"
     "strings"
 
-    "github.com/marcos9966/internal/routes/systool"
+    "github.com/marcos9966/rhumdapp/internal/routes/systool"
 
     "github.com/gin-gonic/gin"
 	"github.com/zserge/webview"
