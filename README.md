@@ -10,7 +10,7 @@ Install go (debian dist):
 ```
 $ sudo apt install golang-go
 ```
-
+define GOROOT and GOPATH environment variables (if you use non standard go folders, see [set the GOPATH environment variable](https://github.com/golang/go/wiki/SettingGOPATH))
 set path go/bin
 ```
 vi .bashrc
