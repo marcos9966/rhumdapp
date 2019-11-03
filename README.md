@@ -41,5 +41,9 @@ chmod +x ./cmd/build.sh
 
 download dependecies
 ```
+<<<<<<< HEAD
 go get -u ...
+=======
+go get -u go get -u github.com/gin-gonic/gin
+>>>>>>> reordering package
 ```
