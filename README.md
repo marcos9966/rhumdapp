@@ -11,7 +11,8 @@ Install go (debian dist):
 $ sudo apt install golang-go
 ```
 define GOROOT and GOPATH environment variables (if you use non standard go folders, see [set the GOPATH environment variable](https://github.com/golang/go/wiki/SettingGOPATH))
-set path go/bin
+
+then set path go/bin
 ```
 vi .bashrc
 ```
@@ -53,7 +54,7 @@ If building project you get the follow error message: "Package webkit2gtk-4.0 wa
 ```
 sudo apt-get install libwebkit2gtk-4.0-dev
 ```
-trying again to build project you may have some notice, however you can run application with
+trying again to build project, maybe you may see some notice, however if compiling, you have not errors, you can run application with
 ```
 cmd/rhumdapp
 ``` 
