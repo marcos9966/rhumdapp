@@ -20,15 +20,9 @@ export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
 ```
 Save, quit terminal and reopen it
 
-download go1.13.3
-```
-go get golang.org/dl/go1.13.3
-go1.13.3 download
-```
-
 download go-bindata utility (used in this project)
 ```
-go1.13.3 get -u github.com/jteeuwen/go-bindata/...
+go get -u github.com/jteeuwen/go-bindata/...
 ```
 
 
@@ -42,4 +36,24 @@ chmod +x ./cmd/build.sh
 download dependecies
 ```
 go get -u go get -u github.com/gin-gonic/gin
+go get github.com/zserge/webview
+go get github.com/phayes/freeport
 ```
+
+try to build package
+```
+cmd/build.sh
+```
+
+If you have problem with GTK3 install (requested by package webview)
+```
+sudo apt-get install build-essential libgtk-3-dev
+```
+If building project you get the follow error message: "Package webkit2gtk-4.0 was not found in the pkg-config search path" install the package
+```
+sudo apt-get install libwebkit2gtk-4.0-dev
+```
+trying again to build project you may have some notice, however you can run application with
+```
+cmd/rhumdapp
+``` 
