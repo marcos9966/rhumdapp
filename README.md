@@ -6,32 +6,20 @@ Currently the project is tested on linux mint distro, so the following instructi
 
 ### Getting started
 
-Install go (debian dist):
-```
-$ sudo apt install golang-go
-```
-define GOROOT and GOPATH environment variables (if you use non standard go folders, see [set the GOPATH environment variable](https://github.com/golang/go/wiki/SettingGOPATH))
+Install go ([see documentation](https://golang.org/doc/install)):
 
-then set path go/bin
+and then make your repository (For example myrepo)
+
+change repo directory (Example myrepo)
+and download rhumdapp:
 ```
-vi .bashrc
+cd ~/go/src/github.com/myrepo
+git clone https://github.com/marcos9966/rhumdapp.git
 ```
-at the end of file add follow line
-```
-export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
-```
-Save, quit terminal and reopen it
 
 download go-bindata utility (used in this project)
 ```
 go get -u github.com/jteeuwen/go-bindata/...
-```
-
-download rhumdapp and enable build shell allowing execute permission:
-```
-go get -u github.com/marcos9966/rhumdapp
-cd $GOPATH/src/github.com/marcos9966/rhumdapp
-chmod +x ./cmd/build.sh
 ```
 
 download dependecies
@@ -46,15 +34,14 @@ try to build package
 cmd/build.sh
 ```
 
-If you have problem with GTK3 install (requested by package webview)
+If you have problem with GTK3 install or Package webkit2gtk-4.0 (requested by package webview)
 ```
+sudo apt-get update
 sudo apt-get install build-essential libgtk-3-dev
-```
-If building project you get the follow error message: "Package webkit2gtk-4.0 was not found in the pkg-config search path" install the package
-```
 sudo apt-get install libwebkit2gtk-4.0-dev
 ```
-trying again to build project, maybe you may see some notice, however if compiling, you have not errors, you can run application with
+
+trying again to build project, maybe you may see some notice, however if compiling without errors, you can run application with
 ```
 cmd/rhumdapp
-``` 
+```
