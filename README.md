@@ -28,7 +28,7 @@ go get -u github.com/jteeuwen/go-bindata/...
 
 download dependecies
 ```
-go get -u go get -u github.com/gin-gonic/gin
+go get -u github.com/gin-gonic/gin
 go get github.com/zserge/webview
 go get github.com/phayes/freeport
 ```
