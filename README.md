@@ -17,6 +17,10 @@ cd ~/go/src/github.com/myrepo
 git clone https://github.com/marcos9966/rhumdapp.git
 ```
 
+replace marcos9966 reference with your report reference contained in file
+main.go and route.go
+
+
 download go-bindata utility (used in this project)
 ```
 go get -u github.com/jteeuwen/go-bindata/...
