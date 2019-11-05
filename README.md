@@ -8,16 +8,16 @@ Currently the project is tested on linux mint distro, so the following instructi
 
 Install go ([see documentation](https://golang.org/doc/install)):
 
-and then make your repository (For example myrepo)
+then make your repository (For example myrepo)
 
-change repo directory (Example myrepo)
+change repository (Example myrepo)
 and download rhumdapp:
 ```
 cd ~/go/src/github.com/myrepo
 git clone https://github.com/marcos9966/rhumdapp.git
 ```
 
-replace marcos9966 reference with your report reference contained in file
+replace marcos9966 reference with your repository reference contained in file
 main.go and route.go
 
 
