@@ -10,7 +10,7 @@ Install go ([see documentation](https://golang.org/doc/install)):
 
 then make your repository (For example myrepo)
 
-change repository (Example myrepo)
+go to repository folder (Example myrepo)
 and download rhumdapp:
 ```
 cd ~/go/src/github.com/myrepo
