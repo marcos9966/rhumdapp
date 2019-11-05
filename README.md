@@ -15,10 +15,15 @@ and download rhumdapp:
 ```
 cd ~/go/src/github.com/myrepo
 git clone https://github.com/marcos9966/rhumdapp.git
+cd rhumdapp
 ```
 
 replace marcos9966 reference with your repository reference contained in the files
-main.go and route.go
+main.go and route.go (for example using vi editor)
+```
+vi main.go
+vi route.go
+```
 
 
 download go-bindata utility (used in this project)
