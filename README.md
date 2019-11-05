@@ -22,7 +22,7 @@ replace marcos9966 reference with your repository reference contained in the fil
 main.go and route.go (for example using vi editor)
 ```
 vi main.go
-vi route.go
+vi router.go
 ```
 
 
