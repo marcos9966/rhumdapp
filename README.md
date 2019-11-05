@@ -33,19 +33,20 @@ go get github.com/zserge/webview
 go get github.com/phayes/freeport
 ```
 
-try to build package
-```
-cmd/build.sh
-```
-
-If you have problem with GTK3 install or Package webkit2gtk-4.0 (requested by package webview)
+If you have problem downloading webview  (Package webkit2gtk-4.0 requested by package webview)
+run follow commands
 ```
 sudo apt-get update
 sudo apt-get install build-essential libgtk-3-dev
 sudo apt-get install libwebkit2gtk-4.0-dev
 ```
 
-trying again to build project, maybe you may see some notice, however if compiling without errors, you can run application with
+build package
+```
+cmd/build.sh
+```
+
+maybe you may see some notice about deprecated calls, however if compiling without errors, you can run application with
 ```
 cmd/rhumdapp
 ```
