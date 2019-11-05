@@ -46,7 +46,7 @@ build package
 cmd/build.sh
 ```
 
-maybe you may see some notice about deprecated calls, however if compiling without errors, you can run application with
+maybe you may see some notice about deprecated calls, however if it terminated without errors, you can run application with
 ```
 cmd/rhumdapp
 ```
