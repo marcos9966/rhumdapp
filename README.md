@@ -17,7 +17,7 @@ cd ~/go/src/github.com/myrepo
 git clone https://github.com/marcos9966/rhumdapp.git
 ```
 
-replace marcos9966 reference with your repository reference contained in file
+replace marcos9966 reference with your repository reference contained in the files
 main.go and route.go
 
 
