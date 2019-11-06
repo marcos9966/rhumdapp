@@ -65,7 +65,7 @@ func (fi bindataFileInfo) Sys() interface{} {
 
 var _appCmpAboutAboutVue = []byte(`<template>
 <div class="container">
-    <h5>Thank to:</h5>
+    <h5>Thanks to:</h5>
     <a class="body-1" href="#" @click="open('https://golang.org/')" >Go</a>
     <br>
     <a class="body-1" href="#" @click="open('https://github.com/gin-gonic/gin')" >Gin-gonic (Go Package)</a>
@@ -123,7 +123,7 @@ func appCmpAboutAboutVue() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "app/cmp/about/about.vue", size: 1502, mode: os.FileMode(420), modTime: time.Unix(1572866627, 0)}
+	info := bindataFileInfo{name: "app/cmp/about/about.vue", size: 1503, mode: os.FileMode(420), modTime: time.Unix(1573047284, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
