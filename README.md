@@ -1,7 +1,7 @@
 # rhumdapp
 
-rhumdapp is based on [webview](https://github.com/zserge/webview) go library.
-The purpose of rhumdapp is to be the skeleton to write desktop application using go, javascript and html.
+rhumdapp is based on [webview](https://github.com/zserge/webview) go package.
+The purpose of rhumdapp is to be the starting package to write desktop application using go, javascript and html.
 Currently the project is tested on linux mint distro, so the following instruction are referred to debian based distro.
 
 ### Getting started
@@ -34,8 +34,8 @@ go get -u github.com/jteeuwen/go-bindata/...
 download dependecies
 ```
 go get -u github.com/gin-gonic/gin
-go get github.com/zserge/webview
-go get github.com/phayes/freeport
+go get -u github.com/zserge/webview
+go get -u github.com/phayes/freeport
 ```
 
 If you have problem downloading webview  (Package webkit2gtk-4.0 requested by package webview)
@@ -51,7 +51,7 @@ build package
 cmd/build.sh
 ```
 
-maybe you may see some notice about deprecated calls, however if it terminated without errors, you can run application with
+maybe you may see some notices about deprecated calls, however if it terminated without errors, you can run application with
 ```
 cmd/rhumdapp
 ```
