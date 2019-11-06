@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/marcos9966/rhumdapp/internal/pkg/resmgr"
+	"github.com/marcos9966/rhumdapp/pkg/resmgr"
     "strconv"
 
     "github.com/gin-gonic/gin"
