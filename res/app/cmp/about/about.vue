@@ -1,6 +1,6 @@
 <template>
 <div class="container">
-    <h5>Thank to:</h5>
+    <h5>Thanks to:</h5>
     <a class="body-1" href="#" @click="open('https://golang.org/')" >Go</a>
     <br>
     <a class="body-1" href="#" @click="open('https://github.com/gin-gonic/gin')" >Gin-gonic (Go Package)</a>
