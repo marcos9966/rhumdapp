@@ -2,7 +2,7 @@
 
 rhumdapp is based on [webview](https://github.com/zserge/webview) go package.
 The purpose of rhumdapp is to be the starting package to write desktop application using go, javascript and html.
-Currently the project is tested on linux mint distro, so the following instruction are referred to debian based distro.
+Currently the project is tested on linux mint distro, so the following instructions are referred to debian based distro.
 
 ### Getting started
 
