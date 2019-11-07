@@ -2,15 +2,13 @@ package main
 
 import (
 	"errors"
-	"fmt"
 	"net/http"
     "os"
     "path/filepath"
     "strings"
 
-    "github.com/marcos9966/rhumdapp/routes/systool"
-
     "github.com/gin-gonic/gin"
+    "github.com/marcos9966/rhumdapp/routes/systool"
 	"github.com/zserge/webview"
 )
 
@@ -29,8 +27,6 @@ func handleRoutes(w webview.WebView) {
         var contentType string
         var data []byte
         err:= errors.New("")
-		fmt.Println("NoRoute")
-		fmt.Println(c.Request.URL.String())
         data, err = resMgr.Get(c.Request.URL.String())
         if err != nil {
 			c.AbortWithStatus(404)
