@@ -24,6 +24,7 @@ func handleRoutes(w webview.WebView) {
     // add here other custom routes
     systool.AddRoutes(router)
 
+	// if not mapped as route try to open resource file
     router.NoRoute(func(c *gin.Context) {
         var contentType string
         var data []byte

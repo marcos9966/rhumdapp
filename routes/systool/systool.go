@@ -1,20 +1,18 @@
-//
+// routes to use system resources and functionality
 package systool
 import (
     "os/exec"
     "github.com/gin-gonic/gin"
 )
 
+// Rhumdapp Standard function to add package routes
 func AddRoutes(r *gin.Engine) {
     r.GET("/api/systool/url/open", urlOpen)
 }
 
+// open file passing an url with default system command
+// Actually works only with debian based distro
 func urlOpen(c *gin.Context) {
-        /*
-        import(
-            "os/exec"
-        )
-        */
         if c.Request.Body == nil {
             c.AbortWithStatus(404)
             return
