@@ -1,15 +1,15 @@
 package main
 
 import (
-	"errors"
-	"net/http"
+    "errors"
+    "net/http"
     "os"
     "path/filepath"
     "strings"
 
     "github.com/gin-gonic/gin"
     "github.com/marcos9966/rhumdapp/routes/systool"
-	"github.com/zserge/webview"
+    "github.com/zserge/webview"
 )
 
 func handleRoutes(w webview.WebView) {
@@ -22,15 +22,15 @@ func handleRoutes(w webview.WebView) {
     // add here other custom routes
     systool.AddRoutes(router)
 
-	// if not mapped as route try to open resource file
+    // if not mapped as route try to open resource file
     router.NoRoute(func(c *gin.Context) {
         var contentType string
         var data []byte
         err:= errors.New("")
         data, err = resMgr.Get(c.Request.URL.String())
         if err != nil {
-			c.AbortWithStatus(404)
-			return
+            c.AbortWithStatus(404)
+            return
         }
 
         contentType = http.DetectContentType(data)
