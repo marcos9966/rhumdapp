@@ -14,6 +14,7 @@ import (
 
 func handleRoutes(w webview.WebView) {
 
+    // route to quit application
     router.GET("/api/action/quit", func(c *gin.Context) {
         w.Terminate()
         os.Exit(0)
