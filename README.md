@@ -8,7 +8,7 @@ Currently the project is tested on linux mint distro, so the following instructi
 
 Install go ([see documentation](https://golang.org/doc/install)):
 
-create your user github (For example myuser) in folder $GOPATH/src/github.com
+create your user github (For example myuser) in folder ~/go/src/github.com
 
 go to user folder (Example myuser)
 and download rhumdapp:
