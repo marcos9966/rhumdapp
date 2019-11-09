@@ -152,15 +152,12 @@ then add methods section
                 url:"/api/example/test",
                 params:{text:self.text}
             }).then(data => {
-                console.log("api test")
-                console.log(data)
+                alert("you have typed: "+data.result)
             })
             .catch(error => {
-                console.log("api test - ERROR")
-                console.log(error)
+                alert("you have an error:"+error)
             });
         }
     }
-
-
 ```
+build project and run
