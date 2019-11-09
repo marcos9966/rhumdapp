@@ -117,7 +117,7 @@ add this line after comment
     example.AddRoutes(router)
 ```
 
-## Adding api call in vue component
+#### Adding api call in vue component
 change first component example 
 ```
 code res/app/cmp/first/first.vue
