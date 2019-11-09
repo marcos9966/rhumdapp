@@ -12,6 +12,10 @@ var app = {
                 resolve(response.data);
             }).catch(function (error) {
                 if (error.response) {
+                    if (typeof error.response.data!="undefined" && typeof error.response.data.err!="undefined") {
+                        reject(error.response.data.err);
+                        return;
+                    }
                     reject(error.response)
                 } else if (error.request) {
                     reject(error.request)

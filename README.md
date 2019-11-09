@@ -55,3 +55,112 @@ maybe you may see some notices about deprecated calls, however if it terminated 
 ```
 cmd/rhumdapp
 ```
+
+### Examples
+
+## Adding a new api route
+
+```
+cd routes
+mkdir example
+cd example
+vi example.go
+```
+
+and insert follow text
+
+```
+// Example
+package example
+import (
+    "github.com/gin-gonic/gin"
+)
+
+// Rhumdapp Standard function to add package routes
+func AddRoutes(r *gin.Engine) {
+    r.GET("/api/example/test", test)
+}
+
+// test api route
+func test(c *gin.Context) {
+        if c.Request.Body == nil {
+            c.AbortWithStatus(404)
+            return
+        }
+        params := struct {
+            Text    	string `form:"text"`
+        }{}
+        c.Bind(&params)
+        if params.Text=="" {
+            c.JSON(500, gin.H{"err":"text is mandatory"})
+            return
+        }
+        c.JSON(200, gin.H{
+            "result":params.Text,
+        })
+}
+```
+change into root folder
+```
+cd ../..
+```
+and change router.go
+```
+vi router.go
+```
+add import package
+add follow code line in import section
+```
+    "github.com/myuser/rhumdapp/routes/examples"
+```
+add code after comment
+// add here other custom routes
+```
+    example.AddRoutes(router)
+```
+
+## Adding api call in vue component
+change first component example 
+```
+vi res/app/cmp/first/first.vue
+```
+add html into template html (after h5 html tag)
+```
+<v-btn rounded color="primary" dark>test</v-btn>
+<v-text-field color="success" v-model="text" ></v-text-field>
+
+```
+change module exports data (add "text" json tag)
+```
+module.exports = {
+    data: function() {
+        return {
+            text: ""
+        }
+    }
+```
+then add methods section
+```
+    mounted: function() {
+        console.log("first component mounted");
+    },
+    methods: {
+        test: function(){
+            var self = this;
+            app.api({
+                method:"GET",
+                url:"/api/example/test",
+                params:{text:self.text}
+            }).then(data => {
+                console.log("api test")
+                console.log(data)
+            })
+            .catch(error => {
+                console.log("api test - ERROR")
+                console.log(error)
+            });
+        }
+    }
+
+
+```
