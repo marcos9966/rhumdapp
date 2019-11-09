@@ -120,7 +120,7 @@ add this line after comment
 ## Adding api call in vue component
 change first component example 
 ```
-vi res/app/cmp/first/first.vue
+code res/app/cmp/first/first.vue
 ```
 add html into template html (after h5 html tag)
 ```
@@ -137,7 +137,7 @@ module.exports = {
         }
     }
 ```
-then add methods section
+then add methods section like this:
 ```
     mounted: function() {
         console.log("first component mounted");
