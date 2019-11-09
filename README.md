@@ -58,7 +58,7 @@ cmd/rhumdapp
 
 ### Examples
 
-## Adding a new api route
+#### Adding a new api route
 
 ```
 cd routes
