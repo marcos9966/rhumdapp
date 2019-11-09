@@ -59,15 +59,15 @@ cmd/rhumdapp
 ### Examples
 
 #### Adding a new api route
+I use VS Code as editor so you change code statement with your personal editor command.
+I will add a new package route
 
 ```
-cd routes
-mkdir example
-cd example
-vi example.go
+mkdir routes/example
+code routes/example/example.go
 ```
 
-and insert follow text
+and write the follow text
 
 ```
 // Example
@@ -100,20 +100,18 @@ func test(c *gin.Context) {
         })
 }
 ```
-change into root folder
+change router.go
 ```
-cd ../..
-```
-and change router.go
-```
-vi router.go
+code router.go
 ```
 add import package
-add follow code line in import section
+add follow line in import section
 ```
     "github.com/myuser/rhumdapp/routes/examples"
 ```
-add code after comment
+
+add this line after comment
+
 // add here other custom routes
 ```
     example.AddRoutes(router)
