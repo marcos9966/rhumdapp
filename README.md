@@ -19,10 +19,10 @@ cd rhumdapp
 ```
 
 replace marcos9966 reference with your repository reference contained in the files
-main.go and route.go (for example using vi editor)
+main.go and route.go (for example using VS code editor)
 ```
-vi main.go
-vi router.go
+code main.go
+code router.go
 ```
 
 
@@ -59,8 +59,7 @@ cmd/rhumdapp
 ### Examples
 
 #### Adding a new api route
-I use VS Code as editor so you change code statement with your personal editor command.
-I will add a new package route
+Add a new package route
 
 ```
 mkdir routes/example
