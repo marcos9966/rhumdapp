@@ -107,7 +107,7 @@ code router.go
 add import package
 add follow line in import section
 ```
-    "github.com/myuser/rhumdapp/routes/examples"
+    "github.com/myuser/rhumdapp/routes/example"
 ```
 
 add this line after comment
@@ -124,7 +124,7 @@ code res/app/cmp/first/first.vue
 ```
 add html into template html (after h5 html tag)
 ```
-<v-btn rounded color="primary" dark>test</v-btn>
+<v-btn rounded color="primary" dark @click="test">test</v-btn>
 <v-text-field color="success" v-model="text" ></v-text-field>
 
 ```
